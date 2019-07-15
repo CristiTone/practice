@@ -1,0 +1,210 @@
+body {
+	background-color: #202323;
+}
+
+.App {
+	text-align: center;
+	padding: 5%;
+}
+
+.App-title {
+	font-size: 30px;
+	color: #4b9faf;
+	margin-bottom: 10px;
+}
+
+input[type="text"] {
+	width: 45%;
+	height: 25px;
+	border-radius: 10px 0 0 10px;
+	border-style: solid;
+	border: none;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+input[type="button"] {
+	background-color: white;
+	border: none;
+	height: 25px;
+	width: 35px;
+	border-radius: 0 10px 10px 0;
+	border-left: 1px solid #202323;
+}
+
+/*profile*/
+.profile {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10px;
+}
+
+.profile-info {
+	margin-left: 10px;
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: white;
+}
+
+.profile-img {
+	width: 150px;
+	height: 150px;
+	border: 3px solid white;
+	border-radius: 75px;
+}
+
+.profile-name {
+	font-size: 25px;
+
+}
+
+.profile-author {
+	font-size: 20px;
+}
+
+.profile-genre {
+	font-size: 15px;
+}
+
+/*gallery*/
+.story {
+	display: inline-block;
+	width: 220px;
+	height: 220px;
+	margin: 10px;
+	text-align: left;
+	cursor: pointer;
+	position: relative;
+}
+
+.story-img {
+	width: 220px;
+	height: 220px;
+	border: 3px solid white;
+	border-radius: 3px;
+	position: absolute;
+}
+
+.story-name {
+	background-color: black;
+	color: white;
+	opacity: 0.75;
+	width: 214px;
+	margin-left: 3px;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	padding: 5px;
+}
+
+.story-play {
+	position: absolute;
+	width: 220px;
+	height: 220px;
+}
+
+.story-play-inner {
+	position: absolute;
+	text-align: center;
+	font-size: 25px;
+	background-color: black;
+	border-radius: 30px;
+	width: 60px;
+	height: 60px;
+	color: white;
+	padding-top: 13px;
+	margin-left: 80px;
+	margin-top: 80px;
+	opacity: 0;
+}
+
+.story-play-inner:hover {
+	opacity: 0.8;
+	animation-name: fade-in;
+	animation-duration: 0.5s;
+}
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 0.8;
+	}
+}
+
+/*progress bar*/
+.progress-bar {
+	display: inline-block;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	background-color: #4b9faf;
+	display: flex;
+	flex-direction: row;
+}
+
+.progress-container {
+	display: inline-block;
+	width: 60%;
+	position: absolute;
+	left: 20%;
+	padding: 5px 10px;
+	flex: 4;
+}
+
+.progress-title, .progress-time {
+	display: inline-block;
+	font-family: serif;
+	font-style: oblique;
+	font-size: 20px;
+}
+
+.progress-title {
+	float: left;
+}
+
+.progress-time {
+	float: right;
+}
+
+
+.timeline {
+	display: inline-block;
+	height: 10px;
+	width: 700px;
+	background-color: #202323;
+	margin: auto;
+	position: relative;
+	top: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.playhead {
+	width: 18px;
+	height: 9px;
+	background-color: white;
+	border-radius: 5px;
+	margin: 0.45px;
+}
+
+.play_pause {
+    height: 40px;
+    width: 40px;
+    background-color: #202323;
+    font-size: 20px;
+    padding-top: 10px;
+    float:left;
+    margin-left: -50px;
+    border-radius:50%;
+    cursor: pointer;
+}
+
+.play_pause:hover {
+    background-color: black;
+}
