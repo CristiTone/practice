@@ -1,0 +1,6 @@
+{
+  "mongoURI": "mongodb+srv://admin:admin@mernapp-her5m.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtToken": "mysecrettoken",
+  "githubClientId": "1bbac43296dcc7c46584",
+  "githubSecret": "1a8f3d9727db876803b9b66d7d37c2dfe94aa89f"
+}
